@@ -1,17 +1,25 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# Title of the web app
-st.title("Chromium")
-st.write("Versatile web proxy. For my guys at school.")
-
 # Game URLs dictionary
 game_urls = {
     "getaway_shootout": "https://selenite.cc/semag/getawayshooter/index.html"
 }
 
-# Try embedding the game in an iframe
-st.subheader("Embedded Game (May not work due to security restrictions)")
+webpages = ["Home", "Games", "PictureOfTheDay"]
+st.sidebar.radio(webpages)
+
+# Title of the web app
+st.title("Chromium")
+st.write("Versatile web proxy. For my guys at school.")
+
+
+
+
+
+
+
+st.subheader("Getaway Shootout!")
 try:
     components.iframe(game_urls["getaway_shootout"], width=1500, height=700)
 except:
