@@ -53,13 +53,13 @@ if selected_page == webpages[1]:
 
 
 if selected_page == webpages[2]:
-    with st.status("Downloading repository data..."):
-        st.write("Searching for data...")
-        time.sleep(2)
-        st.write("Found URL.")
-        time.sleep(1)
-        st.write("Extracting data...")
-        time.sleep(1)
+    #with st.status("Downloading repository data..."):
+    #    st.write("Searching for data...")
+    #    time.sleep(2)
+    #    st.write("Found URL.")
+    #    time.sleep(1)
+    #    st.write("Extracting data...")
+    #    time.sleep(1)
     st.status("Website Under Development")
     
 
