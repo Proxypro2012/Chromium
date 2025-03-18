@@ -23,21 +23,15 @@ if selected_page == webpages[0]:
     
 if selected_page == webpages[1]:
     st.subheader("Getaway Shootout!")
-    js_code = f"""
-    <script>
-        function openBlank() {{
-            var win = window.open();
-            var iframe = win.document.createElement("iframe");
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.src = "{game_urls["getaway_shootout"]}";
-            win.document.body.style.margin = "0";
-            win.document.body.style.overflow = "hidden";
-            win.document.body.appendChild(iframe);
-        }}
-    </script>
-    <button onclick="openBlank()" style="font-size:20px;padding:10px;">Play in a Blank Tab</button>
-    """
-
-    st.markdown(js_code, unsafe_allow_html=True)
-
+    st.subheader("Embedded Game (May not work due to security restrictions)")
+    try:
+        components.iframe(game_urls["getaway_shootout"], width=1500, height=700)
+    except:
+        st.error("Embedding failed. Use the link below to play the game.")
+    
+    # Alternative option: Provide a clickable link
+    st.subheader("Alternative Link")
+    st.markdown(f'[Click here to play Getaway Shooter]({game_urls["getaway_shootout"]})', unsafe_allow_html=True)
+    
+    # Additional app features
+    st.text("Enjoy playing Getaway Shooter!")
