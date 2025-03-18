@@ -20,6 +20,7 @@ webpages = ["Home", "Games", "PictureOfTheDay"]
 st.sidebar.header("Navigation")
 selected_page = st.sidebar.radio("", webpages)
 st.sidebar.image("logo.png")
+st.write("Chromium")
 
 
 
