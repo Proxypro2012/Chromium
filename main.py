@@ -30,7 +30,7 @@ if selected_page == webpages[1]:
     
     # Alternative option: Provide a clickable link
     st.subheader("Alternative Link")
-    st.markdown(f'[Click here to play Getaway Shooter]({game_urls["getaway_shootout"]})', unsafe_allow_html=True)
+    st.markdown(f'[Click here to play Getaway Shootout]({game_urls["getaway_shootout"]})', unsafe_allow_html=True)
     
     # Additional app features
-    st.text("Enjoy playing Getaway Shooter!")
+    st.text("Enjoy playing Getaway Shootout!")
