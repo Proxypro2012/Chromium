@@ -39,5 +39,5 @@ if selected_page == webpages[1]:
     <button onclick="openBlank()" style="font-size:20px;padding:10px;">Play in a Blank Tab</button>
     """
 
-     st.markdown(js_code, unsafe_allow_html=True)
+    st.markdown(js_code, unsafe_allow_html=True)
 
