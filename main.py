@@ -9,7 +9,7 @@ game_urls = {
 webpages = ["Home", "Games", "PictureOfTheDay"]
 selected_page = st.sidebar.radio("Navigation", webpages)
 
-#
+st.set_page_config(layout="wide")
 
 
 if selected_page == webpages[0]:
