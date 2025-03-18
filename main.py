@@ -12,7 +12,7 @@ st.set_page_config(
 
 
 game_urls = {
-    "getaway_shootout": "https://selenite.cc/semag/getawayshooter/index.html"
+    "getaway_shootout": "https://selenite-e3u.pages.dev/getawayshooter/"
 }
 
 
