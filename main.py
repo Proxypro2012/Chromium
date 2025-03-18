@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
+import time
 
 st.set_page_config(layout="wide")
 
@@ -37,3 +38,21 @@ if selected_page == webpages[1]:
     
     # Additional app features
     st.text("Enjoy playing Getaway Shootout!")
+
+
+
+
+
+if selected_page == webpages[2]:
+    with st.status("Downloading data..."):
+        st.write("Searching for data...")
+        time.sleep(2)
+        st.write("Found URL.")
+        time.sleep(1)
+        st.write("Downloading data...")
+        time.sleep(1)
+    
+    st.button("Rerun")
+
+
+
