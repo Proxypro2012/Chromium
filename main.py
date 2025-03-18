@@ -24,7 +24,7 @@ if selected_page == webpages[0]:
 if selected_page == webpages[1]:
     st.subheader("Getaway Shootout!")
     try:
-        components.iframe(game_urls["getaway_shootout"], width=1500, height=700)
+        components.iframe(game_urls["getaway_shootout"], width=1500, height=500)
     except:
         st.error("Embedding failed. Use the link below to play the game.")
     
