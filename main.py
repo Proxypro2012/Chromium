@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide",
     page_title="Chromium",
     page_icon=":guardsman:",  # Optionally, set a page icon
-    theme="dark"  # Choose 'light' or 'dark'
+    initial_sidebar_state="expanded"
 )
 
 
