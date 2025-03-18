@@ -12,9 +12,9 @@ selected_page = st.sidebar.radio("Navigation", webpages)
 #
 
 
-# Title of the web app
-st.title("Chromium")
-st.write("Versatile web proxy. For my guys at school.")
+if selected_page == webpages[0]:
+    st.title("Chromium")
+    st.write("Versatile web proxy. For my guys at school.")
 
 
 
