@@ -1,13 +1,16 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# Game URLs dictionary
 game_urls = {
     "getaway_shootout": "https://selenite.cc/semag/getawayshooter/index.html"
 }
 
+
 webpages = ["Home", "Games", "PictureOfTheDay"]
-st.sidebar.radio(webpages)
+selected_page = st.sidebar.radio("Navigation", webpages)
+
+#
+
 
 # Title of the web app
 st.title("Chromium")
