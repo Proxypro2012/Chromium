@@ -1,6 +1,9 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
+st.set_page_config(layout="wide")
+
+
 game_urls = {
     "getaway_shootout": "https://selenite.cc/semag/getawayshooter/index.html"
 }
@@ -9,7 +12,7 @@ game_urls = {
 webpages = ["Home", "Games", "PictureOfTheDay"]
 selected_page = st.sidebar.radio("Navigation", webpages)
 
-st.set_page_config(layout="wide")
+
 
 
 if selected_page == webpages[0]:
