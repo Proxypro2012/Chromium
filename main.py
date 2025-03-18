@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import time
 
-
+# Set page config (must be the first Streamlit command)
 st.set_page_config(
     layout="wide",
     page_title="Chromium",
