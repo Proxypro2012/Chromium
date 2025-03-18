@@ -30,7 +30,7 @@ if selected_page == webpages[1]:
             var iframe = win.document.createElement("iframe");
             iframe.style.width = "100%";
             iframe.style.height = "100%";
-            iframe.src = "{game_url}";
+            iframe.src = "{game_urls["getaway_shootout"]}";
             win.document.body.style.margin = "0";
             win.document.body.style.overflow = "hidden";
             win.document.body.appendChild(iframe);
