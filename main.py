@@ -16,7 +16,7 @@ game_urls = {
 }
 
 
-webpages = ["Home", "Games", "PictureOfTheDay"]
+webpages = ["Home", "Games", "Status"]
 st.sidebar.header("Navigation")
 selected_page = st.sidebar.radio("", webpages)
 st.sidebar.image("logo.png")
