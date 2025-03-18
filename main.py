@@ -23,7 +23,6 @@ if selected_page == webpages[0]:
     
 if selected_page == webpages[1]:
     st.subheader("Getaway Shootout!")
-    st.subheader("Embedded Game (May not work due to security restrictions)")
     try:
         components.iframe(game_urls["getaway_shootout"], width=1500, height=700)
     except:
