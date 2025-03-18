@@ -10,7 +10,7 @@ game_url = "https://selenite.cc/semag/getawayshooter/index.html"
 # Try embedding the game in an iframe
 st.subheader("Embedded Game (May not work due to security restrictions)")
 try:
-    components.iframe(game_url, width=800, height=600)
+    components.iframe(game_url, width=400, height=300)
 except:
     st.error("Embedding failed. Use the link below to play the game.")
 
