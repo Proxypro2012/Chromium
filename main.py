@@ -17,7 +17,7 @@ game_urls = {
 
 
 webpages = ["Home", "Games", "PictureOfTheDay"]
-selected_page = st.sidebar.radio("Navigation", webpages)
+selected_page = st.sidebar.radio(st.title("Navigation"), webpages)
 
 
 
