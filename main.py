@@ -6,7 +6,7 @@ import time
 st.set_page_config(
     layout="wide",
     page_title="Chromium",
-    page_icon=":guardsman:",  # Optionally, set a page icon
+    page_icon="logo.png",  # Optionally, set a page icon
     initial_sidebar_state="expanded"
 )
 
