@@ -2,7 +2,14 @@ import streamlit as st
 import streamlit.components.v1 as components
 import time
 
-st.set_page_config(layout="wide")
+
+st.set_page_config(
+    layout="wide",
+    page_title="Chromium",
+    page_icon=":guardsman:",  # Optionally, set a page icon
+    initial_sidebar_state="expanded",  # Optional, sidebar state
+    theme="dark"  # Choose 'light' or 'dark'
+)
 
 
 game_urls = {
